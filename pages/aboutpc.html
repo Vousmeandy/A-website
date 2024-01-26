@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Prince Consort</title>
+    <link rel="stylesheet" href="../style.css"> <!-- Adjust the path if needed -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="../Index.html">
+            <img src="../Images/Imperialseal.png" alt="Imperial Seal" class="imperial-seal">
+            </a>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#">The Queen</a>
+                    <div class="dropdown-content">
+                        <a href="../pages/abouthm.html">About</a>
+                        <a href="../pages/thecoronation.html">The coronations</a>
+                        <a href="../pages/charities.html">Charities</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">The Prince Consort</a>
+                    <div class="dropdown-content">
+                        <a href="../pages/aboutpc.html">About</a>
+                        <a href="../pages/charitiespc.html">Charities</a>
+                        <a href="../pages/theinvestiture.html">The Prince Consort Investiture</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">The Queen Mother</a>
+                    <div class="dropdown-content">
+                        <a href="../pages/aboutqm.html">About the queen mother</a>
+                        <a href="../pages/charitiesqm.html">Charities</a>
+                        <a href="../pages/theqmtrust.html">Queen Mother Trust Prize</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">The Royal Family</a>
+                    <div class="dropdown-content">
+                        <a href="../pages/royaltykr.html">Royal Family Members</a>
+                        <a href="../pages/geumprince.html">The Imperial Geum Princess</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">The Royal Residences</a>
+                    <div class="dropdown-content">
+                        <a href="../pages/kip.html">Kim Imperial Castle</a>
+                        <a href="../pages/gip.html">Geum Imperial Palace</a>
+                        <a href="../pages/geumhouse.html">Geum Imperial House</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+            <div class="The Duke Of Borang">
+            <h2>The Duke Of Borang</h2>
+            <img src="../Images/Princetaeoh.jpeg" alt="His royal highness the duke of Borang">
+            <h3>About His royal Highness The Duke Of Borang</h3>
+            <div class="The Duke Of Borang">
+                <p>
+                    His Royal Highness The Prince Tae Oh Duke Of Borang started the royal life in 2019 after his marriage to Her Majesty The Queen, The Duke is The Serene captain of the Korean Marine And Airforce as Duke of Borang the Duke made serious measures to ensure equality and greater conditions of life in Borang in the North region of the Kingdom of Korea, The prince is also Patron of more than 234 Social charities
+                </p>
+            </div>
+        </div>
+
+        <div class="queen-info">
+            <img src="../Images/OIG.jpeg" alt="The Duke Of Borang">
+            <h3>The Prince Tae Oh</h3>
+            <div class="His history">
+                <p>
+                    Born into a common family in the Kingdom Of Korea, His royal Highness was in touch with the regular population and was able to get really close to the general public, as a prince he always state the Queen is my first priority our people is also a priority
+                </p>
+            </div>
+        </div>
+
+        <section id="relatedContent">
+            <h2>Related Content</h2>
+            <div class="related-container">
+                <div class="related-item">
+                    <a href="../Index.html">
+                        <img src="../Images/thqueeninindia.png" alt="Related Content 1">
+                    </a>
+                </div>
+                <div class="related-item">
+                    <a href="../Index.html">
+                        <img src="../Images/TheDukeOfBoranginJakarta.png" alt="Related Content 2">
+                    </a>
+                </div>
+                <div class="related-item">
+                    <a href="../Index.html">
+                        <img src="../Images/kindomday.png" alt="Related Content 2">
+                    </a>
+                </div>
+                <div class="related-item">
+                    <a href="../Index.html">
+                        <img src="../Images/queens.png" alt="Related Content 2">
+                    </a>
+                </div>
+                <!-- Add more related items as needed -->
+            </div>
+        </section>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const relatedItems = document.querySelectorAll('.related-item');
+    
+                function isElementInViewport(el) {
+                    const rect = el.getBoundingClientRect();
+                    return (
+                        rect.top >= 0 &&
+                        rect.left >= 0 &&
+                        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                    );
+                }
+    
+                function handleScroll() {
+                    relatedItems.forEach((item) => {
+                        if (isElementInViewport(item)) {
+                            item.classList.add('visible');
+                        }
+                    });
+                }
+    
+                // Initial check when the page loads
+                handleScroll();
+    
+                // Listen for scroll events
+                window.addEventListener('scroll', handleScroll);
+            });
+        </script>
+
+    </main>
+
+    <aside id="socialWidget">
+        <a href="https://instagram.com/royalfamily" target="_blank" class="socialLink">
+            <img src="../Images/png-transparent-instagram-logo-social-media-medtempnow-computer-icons-logo-instagram-blue-text-internet.png" alt="Instagram">
+        </a>
+        <a href="https://twitter.com/royalfamily" target="_blank" class="socialLink">
+            <img src="../Images/Twitter.png" alt="Twitter">
+        </a>
+        <a href="https://facebook.com/royalfamily" target="_blank" class="socialLink">
+            <img src="../Images/facebook-logo-blue-circle-large-transparent-png.png" alt="Facebook">
+        </a>
+    </aside>
+</body>
+</html>
